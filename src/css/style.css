@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 button {
-  @apply bg-[#5c5c5c] text-white p-2 opacity-80;
+  @apply text-white p-2 opacity-80;
 }
 
 body {
@@ -12,6 +12,10 @@ body {
 
 header {
   @apply bg-[#534ACB] w-full pl-8 pr-8 pt-4 pb-4 flex flex-row justify-between;
+}
+
+footer {
+  @apply bg-[#141414] w-full p-3;
 }
 
 a {
