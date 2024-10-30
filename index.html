@@ -9,21 +9,23 @@
   <script type="module" src="/src/app.js"></script>
 </head>
 
-<body>
-  <img src="/images/noroff-logo.png" alt="Noroff Logo" />
-
-  <h1>Home</h1>
-
-  <a href="/profile/">My Profile</a>
-  <a href="/auth/login/" id="loginButton">Login</a>
-  <a href="/auth/register/" id="registerButton">Register</a>
-  <a href="/post/create/"> Create Post </a>
-  <button id="logout-button">Logout</button>
-  <h2>My Latest Posts</h2>
-  <ul class="myBlogPosts-list">
+<body class='flex flex-col items-center'>
+  <header>
+    <img src="/images/noroff-logo.png" alt="Noroff Logo" class="ml-2" />
+    <div class="flex items-center gap-10 text-white">
+      <a href="/profile/">My Profile</a>
+      <a href="/auth/login/" id="loginButton">Login</a>
+      <a href="/auth/register/" id="registerButton">Register</a>
+      <a href="/post/create/"> Create Post </a>
+      <a id="logout-button">Logout</a>
+    </div>
+  </header>
+  <h1 class="text-4xl text-white mt-10">Home</h1>
+  <h2 class="text-white text-xl mt-10">My Latest Posts</h2>
+  <ul class="myBlogPosts-list w-full flex flex-wrap gap-10 justify-center mt-[100px]">
   </ul>
-  <h2> All Blogposts </h2>
-  <li class="blogposts-list"></li>
+  <h2 class="text-white text-xl mt-10"> All Blogposts </h2>
+  <li class="blogposts-list w-full flex flex-wrap gap-10 justify-center mt-[100px]"></li>
 
   <ul>
     <button> First Page </button>

@@ -7,11 +7,6 @@
   margin-top: 100px;
 }
 
-.blogpost-image {
-  height: 400px;
-  object-fit: cover;
-}
-
 .blogposts-list {
   width: 100%;
   display: flex;
@@ -19,6 +14,11 @@
   gap: 40px;
   justify-content: center;
   margin-top: 100px;
+}
+
+.blogpost-image {
+  height: 400px;
+  object-fit: cover;
 }
 
 .post-container {

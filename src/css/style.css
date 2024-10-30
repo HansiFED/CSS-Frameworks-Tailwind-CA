@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+button {
+  @apply bg-[#5c5c5c] text-white p-2 opacity-80;
+}
+
+body {
+  @apply bg-[#2B2B2B];
+}
+
+header {
+  @apply bg-[#534ACB] w-full pl-8 pr-8 pt-4 pb-4 flex flex-row justify-between;
+}
+
+a {
+  @apply cursor-pointer;
+}

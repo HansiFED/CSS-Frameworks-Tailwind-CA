@@ -26,10 +26,11 @@ export function buildMyPosts(blogPost) {
     let postContainerBottom = document.createElement("div");
     let postContainerBottomHeader = document.createElement("h2");
 
-    postContainer.className = "post-container flex-c";
-    blogPostImage.className = "blogpost-image";
-    postContainerBottom.className = "postcontainer-bottom flex-c center-horizontal";
-    postContainerBottomHeader.className = "postContainerHeader";
+    postContainer.className =
+      "cursor-pointer flex flex-col w-96 mb-10 transition duration-200 hover:scale-[1.15] hover:shadow-lg hover:shadow-[10px_10px_5px_3px_rgba(0,0,0,0.232)]";
+    blogPostImage.className = "h-96 w-full object-cover";
+    postContainerBottom.className = "p-5 h-[150px] bg-[#3D3D3D] flex flex-col items-center";
+    postContainerBottomHeader.className = "text-white";
 
     blogPostImage.setAttribute("src", element.media?.url || "");
     blogPostImage.setAttribute("alt", element.media?.alt || "No description available");
