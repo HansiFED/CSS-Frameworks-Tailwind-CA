@@ -20,11 +20,17 @@ export const API_SOCIAL = `${API_BASE}/social`;
 
 export const API_SOCIAL_POSTS = `${API_SOCIAL}/posts`;
 
+export const API_SOCIAL_POSTS_MORE_INFO = `${API_SOCIAL}/posts?_author=true&_comments=true&_reactions=true`;
+
 export const API_SOCIAL_SELECTED_POST = `${API_SOCIAL}/posts/${fetchId}`;
 
 export const API_SOCIAL_MY_USER_POSTS = `${API_SOCIAL}/profiles/${localStorage.getItem(
   "userName"
 )}/posts`;
+
+export const API_SOCIAL_MY_USER_POSTS_COMMENTS_AND_REACTIONS = `${API_SOCIAL}/profiles/${localStorage.getItem(
+  "userName"
+)}/posts?_author=true&_comments=true&_reactions=true`;
 
 export const API_SOCIAL_PROFILES = `${API_SOCIAL}/profiles`;
 

@@ -32,6 +32,8 @@ export async function buildSinglePost(post) {
   const createdAt = post.created;
   const updatedAt = post.updated;
 
+  console.log(post);
+
   const createdAtFormatted = formatDate(createdAt);
   const updatedAtFormatted = formatDate(updatedAt);
 

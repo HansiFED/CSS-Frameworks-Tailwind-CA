@@ -10,26 +10,37 @@
 </head>
 
 <body>
-  <h1>Post Page</h1>
-
-  <main>
-    <div class="blogpage-image-container flex-r center-vertical">
-      <img class="blogpage-image" src="#" alt="big blogpost">
+  <header>
+    <a href="/"><img src="/images/noroff-logo.png" alt="Noroff Logo" class="ml-2" /></a>
+    <div class="flex items-center gap-10 text-white">
+      <a href="/profile/">My Profile</a>
+      <a href="/auth/login/" id="loginButton">Login</a>
+      <a href="/auth/register/" id="registerButton">Register</a>
+      <a href="/post/create/"> Create Post </a>
+      <a id="logout-button">Logout</a>
     </div>
-    <div class="headTextWrapper flex-r center-vertical">
-      <h1 id="postHeaderTitle"> Placeholder title </h1>
-    </div>
-    <div class="blogpage-textcontainer flex-c">
-      <p id="postAuthor"> Post Author </p>
-      <p id="blogpost-text">
-      </p>
-      <div class="flex-r center-horizontal underblogpost">
-        <p id="publicationDate"> Publication Date </p>
-        <p id="updatedTime"> Updated Time </p>
+  </header>
+  <main class="flex flex-col items-center">
+    <div class="blogpage-image-container w-full max-w-[1200px] flex flex-col mt-20">
+      <img class="blogpage-image h-[20%] w-full object-cover max-w-[1200px] max-h-[600px]" src="#" alt="big blogpost">
+      <div class="w-full">
+        <div class="headTextWrapper flex">
+          <p id="postAuthor" class="text-white text-xs mt-5"> Post Author </p>
+        </div>
+        <div class="blogpage-textcontainer flex flex-col">
+          <h1 id="postHeaderTitle" class="text-center text-white my-10 text-3xl"> Placeholder title </h1>
+          <p id="blogpost-text" class=" p-5 text-white my-10 bg-[#1D1D1D]">
+          </p>
+          <div class="flex justify-between text-white underblogpost my-10">
+            <p id="publicationDate"> Publication Date </p>
+            <p id="updatedTime"> Updated Time </p>
+          </div>
+        </div>
       </div>
+      <a class="text-center mt-10" href="/">Home</a>
     </div>
   </main>
-  <a href="/">Home</a>
+
 </body>
 
 </html>

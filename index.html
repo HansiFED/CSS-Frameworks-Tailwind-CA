@@ -9,33 +9,40 @@
   <script type="module" src="/src/app.js"></script>
 </head>
 
-<body class='flex flex-col items-center'>
+<body class='flex flex-col'>
   <header>
     <img src="/images/noroff-logo.png" alt="Noroff Logo" class="ml-2" />
     <div class="flex items-center gap-10 text-white">
-      <a href="/profile/">My Profile</a>
+      <div class="flex items-center gap-2 hover:scale-[1.10] transition duration-200">
+        <img id="profilePicture" class="rounded-full w-5 h-5" src="" alt="My profile icon">
+        <a href="/profile/">My Profile</a>
+      </div>
       <a href="/auth/login/" id="loginButton">Login</a>
       <a href="/auth/register/" id="registerButton">Register</a>
-      <a href="/post/create/"> Create Post </a>
-      <a id="logout-button">Logout</a>
-    </div>
+      <div class="flex items-center gap-2 hover:scale-[1.10] transition duration-200">
+        <img src="/images/create-post-icon.svg" alt="Create Post Icon">
+        <a href="/post/create/"> Create Post </a>
+      </div>
+      <div class="flex items-center gap-2 hover:scale-[1.10] transition duration-200">
+        <img src="/images/signout-icon.svg" alt="">
+        <a id="logout-button">Logout</a>
+      </div>
   </header>
 
   <main>
-    <h1 class="text-4xl text-white mt-10 text-center">Home</h1>
-    <h2 class="text-white text-xl mt-10 text-center">My Latest Posts</h2>
-    <ul class="myBlogPosts-list w-full flex flex-wrap gap-10 justify-center mt-[100px]">
+    <h2 class="text-white text-3xl mt-16 text-start ml-5">My Latest Posts:</h2>
+    <ul class="myBlogPosts-list w-full flex flex-wrap gap-10 justify-center mt-[50px]">
     </ul>
-    <h2 class="text-white text-xl mt-10 text-center"> All Blogposts </h2>
-    <li class="blogposts-list w-full flex flex-wrap gap-10 justify-center mt-[100px]"></li>
+    <h2 class="text-white text-3xl mt-10 text-start ml-5"> All Blogposts: </h2>
+    <li class="blogposts-list w-full flex flex-wrap gap-10 justify-center mt-[50px]"></li>
   </main>
 
   <footer>
     <ul class="flex justify-center">
-      <button> First Page </button>
-      <button> Previous Page </button>
-      <button> Next Page </button>
-      <button> Last Page </button>
+      <button class="hover:scale-105 transition duration-200"> First Page </button>
+      <button class="hover:scale-105 transition duration-200"> Previous Page </button>
+      <button class="hover:scale-105 transition duration-200"> Next Page </button>
+      <button class="hover:scale-105 transition duration-200"> Last Page </button>
     </ul>
     <p class="text-white items-start text-center">©HansiFED</p>
   </footer>
