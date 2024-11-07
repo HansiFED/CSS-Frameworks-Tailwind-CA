@@ -73,7 +73,11 @@ export function blogPostsBuilder(blogPost) {
     reactionsWrapper.className = "flex";
     commentsWrapper.className = "flex flex-col items-center";
 
-    postImage.setAttribute("src", post.media?.url || "");
+    postImage.setAttribute(
+      "src",
+      post.media?.url ||
+        "https://broadbits.com/wp-content/themes/ryse/assets/images/no-image/No-Image-Found-400x264.png"
+    );
     postImage.setAttribute("alt", post.media?.alt || "No description available");
     separatorLine.setAttribute("src", "/images/line1.svg");
     separatorLine.setAttribute("alt", "Line divider for the post");

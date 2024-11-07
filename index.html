@@ -11,21 +11,28 @@
 
 <body class='flex flex-col'>
   <header>
-    <img src="/images/noroff-logo.png" alt="Noroff Logo" class="ml-2" />
+    <a href="/"><img src="/images/noroff-logo.png" alt="Noroff Logo"
+        class="ml-2 w-48 h-30 hover:scale-[1.10] transition duration-200" /></a>
     <div class="flex items-center gap-10 text-white">
       <div class="flex items-center gap-2 hover:scale-[1.10] transition duration-200">
-        <img id="profilePicture" class="rounded-full w-5 h-5" src="" alt="My profile icon">
-        <a href="/profile/">My Profile</a>
+        <a class="flex gap-2 items-center" href="/profile/">
+          <img id="profilePicture" class="w-6 h-6 rounded-full" src="" alt="My profile icon">
+          <p>My Profile</p>
+        </a>
       </div>
       <a href="/auth/login/" id="loginButton">Login</a>
       <a href="/auth/register/" id="registerButton">Register</a>
-      <div class="flex items-center gap-2 hover:scale-[1.10] transition duration-200">
-        <img src="/images/create-post-icon.svg" alt="Create Post Icon">
-        <a href="/post/create/"> Create Post </a>
+      <div class="flex items-center hover:scale-[1.10] cursor-pointer transition duration-200">
+        <a class="flex gap-2 items-center" href="/post/create/">
+          <img class="" src="/images/create-post-icon.svg" alt="Create Post Icon">
+          <p>Create Post</p>
+        </a>
       </div>
       <div class="flex items-center gap-2 hover:scale-[1.10] transition duration-200">
-        <img src="/images/signout-icon.svg" alt="">
-        <a id="logout-button">Logout</a>
+        <a class="flex gap-2 items-center" id="logout-button">
+          <img src="/images/signout-icon.svg" alt="">
+          <p>Logout</p>
+        </a>
       </div>
   </header>
 

@@ -23,10 +23,13 @@ import { headers } from "../headers";
 export async function readSinglePost() {
   const pageId = new URLSearchParams(window.location.search).get("id");
   try {
-    const fetchInfo = await fetch(`${API_SOCIAL_POSTS}/${pageId}?_author=true&_comments=true`, {
-      method: "GET",
-      headers: headers(),
-    });
+    const fetchInfo = await fetch(
+      `${API_SOCIAL_POSTS}/${pageId}?_author=true&_comments=true&_reactions=true`,
+      {
+        method: "GET",
+        headers: headers(),
+      }
+    );
 
     if (fetchInfo.ok) {
       const data = await fetchInfo.json();
