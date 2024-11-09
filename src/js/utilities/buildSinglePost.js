@@ -137,6 +137,13 @@ export async function buildSinglePost(post) {
     createDeleteButton.innerHTML = "Delete Post";
     createEditButton.innerHTML = "Edit Post";
 
+    createEditButton.className =
+      "bg-[#151515] pt-3 pb-3 px-6 rounded-xl hover:scale-[1.10] cursor-pointer transition duration-200";
+    createDeleteButton.className =
+      "bg-[#151515] pt-3 pb-3 px-6 rounded-xl hover:scale-[1.10] cursor-pointer transition duration-200";
+
+    buttonWrapper.className = "flex gap-10 my-10";
+
     buttonWrapper.append(createEditButton, createDeleteButton);
 
     document.querySelector("main").append(buttonWrapper);
