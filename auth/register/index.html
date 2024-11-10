@@ -15,7 +15,7 @@
   </header>
   <main class="flex-grow flex flex-col items-center justify-center w-full">
     <img src="/images/noroffIcon.svg" class="mb-5" alt="">
-    <form class="flex flex-col gap-8 w-[600px]" name="register">
+    <form class="flex flex-col gap-8 max-w-[600px] w-[80%]" name="register">
       <div class="flex flex-col gap-4">
         <label class="text-xl text-white" for="name">Name</label>
         <input class="text-l p-3 rounded-lg" id="name" type="text" name="name" required maxlength="20" pattern="^[\w]+$"
@@ -34,6 +34,8 @@
       </div>
       <button
         class="bg-[#534ACB] pt-3 pb-3 mt-5 px-6 rounded-xl hover:scale-[1.02] cursor-pointer transition duration-200">Register</button>
+      <p class="text-center" id="userSuccess" style="color: green;"> </p>
+      <p class="text-center" id="userError" style="color: red;"> </p>
       <div class="flex flex-col items-center gap-8 mt-40 mb-10 text-white">
         <p> Already have an account? </p>
         <a class="bg-[#151515] pt-3 pb-3 px-6 rounded-xl hover:scale-[1.10] cursor-pointer transition duration-200"
@@ -41,8 +43,7 @@
       </div>
 
     </form>
-    <p id="userSuccess" style="color: green;"> </p>
-    <p id="userError" style="color: red;"> </p>
+
   </main>
   <footer class="p-7">
     <p class="text-white items-start text-center flex-grow">©HansiFED</p>

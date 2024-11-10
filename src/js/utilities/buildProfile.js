@@ -44,12 +44,12 @@ export function buildUser() {
   createUserBanner.src = userData.data.banner.url;
   createUserBanner.setAttribute("alt", userData.data.banner.alt);
   createUserBanner.className =
-    " absolute top-[20px] z-0 w-full max-h-[400px] object-cover mx-auto object-cover bg-center";
+    " absolute top-[280px] z-0 w-full max-h-[400px] object-cover mx-auto object-cover bg-center sm:top-[20px]";
 
   createAvatarImg.src = userData.data.avatar.url;
   createAvatarImg.setAttribute("alt", userData.data.avatar.alt);
   createAvatarImg.className =
-    " w-[300px] h-[300px] self-center rounded-full object-cover border-4 border-black";
+    " w-[200px] h-[200px] self-center rounded-full object-cover border-4 border-black sm:w-[300px] sm:h-[300px]";
 
   createUserName.innerHTML = userData.data.name;
   createUserName.className = "text-3xl text-white";

@@ -65,8 +65,8 @@ export function blogPostsBuilder(blogPost) {
       "cursor-pointer flex flex-col w-96 mb-10 transition duration-200 hover:scale-[1.10] hover:shadow-lg hover:shadow-[10px_10px_5px_3px_rgba(0,0,0,0.232)]";
     postImage.className = "h-96 w-full object-cover";
     postContent.className = "p-5 h-[200px] bg-[#151515] flex flex-col text-white";
-    postTitle.className = "text-xl line-clamp-1";
-    postBody.className = "line-clamp-3 text-xs";
+    postTitle.className = "text-xl line-clamp-1 break-all";
+    postBody.className = "line-clamp-3 break-all text-xs";
     postFooter.className = "mt-auto flex flex-col justify-center";
     separatorLine.className = "w-full mb-2";
     footerDetails.className = "flex justify-between items-center";

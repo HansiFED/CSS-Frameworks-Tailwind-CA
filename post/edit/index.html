@@ -10,13 +10,13 @@
 </head>
 
 <body class="flex flex-col min-h-screen">
-  <header>
+  <header class="flex flex-col items-center gap-10 sm:flex-row">
     <a href="/"><img src="/images/noroff-logo.png" alt="Noroff Logo"
         class="ml-2 w-48 h-30 hover:scale-[1.10] transition duration-200" /></a>
-    <div class="flex items-center gap-10 text-white">
+    <div class="flex flex-col items-center gap-10 text-white sm:flex-row">
       <div class="flex items-center gap-2 hover:scale-[1.10] transition duration-200">
         <a class="flex gap-2 items-center" href="/profile/">
-          <img id="profilePicture" class="w-6 h-6 rounded-full" src="" alt="My profile icon">
+          <img id="profilePicture" class="w-6 h-6 rounded-full object-cover" src="" alt="My profile icon">
           <p>My Profile</p>
         </a>
       </div>
@@ -35,7 +35,7 @@
         </a>
       </div>
   </header>
-  <main class="flex flex-col items-center flex-grow justify-center my-44 w-full">
+  <main class="flex flex-col items-center flex-grow justify-center w-full p-10 my-20 sm:my-44 sm:p-10">
     <h1 class="text-white text-3xl">Edit Post</h1>
 
     <form class="flex flex-col gap-5 mt-10 w-full max-w-[1200px]" name="editpostform">

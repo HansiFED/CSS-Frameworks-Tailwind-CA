@@ -57,8 +57,8 @@ export async function buildSinglePost(post) {
   imageAndTitleContainer.append(blogPostImage, header);
 
   blogPostImageBackground.className =
-    "absolute z-1 w-full max-h-[800px] object-cover mx-auto bg-cover bg-center opacity-30";
-  imageAndTitleContainer.className = "z-10 mt-20";
+    "absolute z-1 w-full max-h-[800px] object-cover mx-auto bg-cover bg-center opacity-30 hidden sm:block";
+  imageAndTitleContainer.className = "z-10 sm:mt-20 ";
 
   blogPostImageBackground.src = post.media?.url || "";
   blogPostImage.src = post.media?.url || "";
@@ -98,9 +98,9 @@ export async function buildSinglePost(post) {
 
     fullCommentContainer.className = "flex flex-col text-white w-full items-center justify-between";
     singleCommentContainer.className = "bg-[#151515] w-full rounded-xl";
-    commentLeftContainer.className = "flex items-center gap-4 p-3";
+    commentLeftContainer.className = "flex flex-wrap items-center gap-4 p-3";
     userContainer.className = "flex items-center gap-2";
-    userImage.className = "w-10 h-10 rounded-full";
+    userImage.className = "w-10 h-10 object-cover rounded-full";
     userCommentDate.className = "text-right ml-auto text-xs mb-2";
   });
 
